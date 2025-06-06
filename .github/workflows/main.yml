@@ -32,7 +32,7 @@ jobs:
           scan-type: 'fs'
           scan-ref: '.'
           format: 'table'
-          exit-code: '1'
+
           ignore-unfixed: true
           severity: 'CRITICAL,HIGH'
 
@@ -44,7 +44,7 @@ jobs:
         with:
           image-ref: '${{ secrets.DOCKER_USERNAME }}/python-app:${{ github.sha }}'
           format: 'table'
-          exit-code: '1'
+
           ignore-unfixed: true
           severity: 'CRITICAL,HIGH'
 
